@@ -1,4 +1,4 @@
-%global rel 2
+%global rel 1
 
 Name:		openstack-utils	
 Version:	2017.1-2
@@ -9,8 +9,8 @@ URL:		https://github.com/OGtrilliams/openstack-utils
 Source0:	https://github.com/OGtrilliams/%{name}/archive/%{version}-%{rel}.tar.gz#/%{name}-%{version}-%{rel}.tar.gz
 
 BuildArch:      noarch
-Requires:	crudini
-Requires:	curl
+Requires:	      crudini
+Requires:	      curl
 
 %description  
 Utilities to aid the setup and configuration of OpenStack packages.
@@ -32,7 +32,7 @@ install -p -D -m 644 man/*.1 %{buildroot}%{_mandir}/man1/
 %{_mandir}/man1/*.1.gz
 
 %changelog
-* Thu Aug 08 2017 T. Nichole Williams <tribecca@tribecc.us> 2017.1-2
+* Thu Aug 08 2017 T. Nichole Williams <tribecca@tribecc.us> - 2017.1-2
 - Update to 2017.1-2
 - Update CLI commands to use OpenStack CLI to resolve error msgs
 
